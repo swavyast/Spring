@@ -1,6 +1,7 @@
 package com.ml.spring.dayOne;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TestConfiguration {
@@ -58,6 +59,8 @@ public class TestConfiguration {
 	ClassFour four_ = (ClassFour) context.getBean("four");
 	System.out.println(four==four_); 	//false, because scope has been changed to prototype, hence both instance will be
 						//pointing to two different memory locations.
+	ConfigurableApplicationContext c=(ConfigurableApplicationContext)context;
+	c.close();
     }
 
 }
