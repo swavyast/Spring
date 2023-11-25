@@ -54,7 +54,10 @@ public class TestConfiguration {
 	System.out.print("Accessing without context : ");
 	System.out.println(three3 == three4);	//false, because CLassThree is not implementing singleton pattern unlike ClassOne.
 	System.out.println("___________________________________________");
-
+	ClassFour four = (ClassFour) context.getBean("four");
+	ClassFour four_ = (ClassFour) context.getBean("four");
+	System.out.println(four==four_); 	//false, because scope has been changed to prototype, hence both instance will be
+						//pointing to two different memory locations.
     }
 
 }

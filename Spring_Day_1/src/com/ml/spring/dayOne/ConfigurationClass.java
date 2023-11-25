@@ -34,4 +34,12 @@ public class ConfigurationClass {
 
 	return three;
     }
+    
+    @Bean("four")
+    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    public ClassFour getClassFour() {
+	ClassFour four = new ClassFour(101, "hello world", 23);
+	
+	return four;
+    }
 }
