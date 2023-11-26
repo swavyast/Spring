@@ -8,7 +8,8 @@ public class TestConfiguration {
     public static void main(String[] args) {
 	ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 	System.out.println("\n\nContainer is ready...");
-
+	Customer cust = (Customer) context.getBean("myCust");
+	System.out.println(cust);
     }
 
 }

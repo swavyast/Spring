@@ -10,13 +10,12 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    
+
     @Bean("myEmails")
     public List<String> getEmails() {
 	System.out.println("\n\nBean named \"myEmails\" is loaded");
@@ -25,6 +24,7 @@ public class AppConfig {
 	emails.add("xyz@gmail.com");
 	return emails;
     }
+
     @Bean("myPhones")
     public Set<Long> getPhones() {
 	System.out.println("\n\nBean named \"myPhones\" is loaded");
@@ -33,8 +33,8 @@ public class AppConfig {
 	phones.add(9999999999L);
 	return phones;
     }
+
     @Bean("myProps")
-    @Autowired
     public Properties getProps() {
 	System.out.println("\n\nBean named \"myProps\" is loaded");
 	Properties props = new Properties();
@@ -43,8 +43,9 @@ public class AppConfig {
 	props.put("C", 383887);
 	props.put("D", 38376);
 	props.put("E", 4847);
-        return props;
+	return props;
     }
+
     @Bean("myRefs")
     public Map<String, Integer> getRefs() {
 	System.out.println("\n\nBean named \"myRefs\" is loaded");
@@ -53,6 +54,7 @@ public class AppConfig {
 	refs.put("Someone Else", 987868);
 	return refs;
     }
+
     @Bean("myAddress")
     public Address getAddress() {
 	System.out.println("\n\nBean named \"myAddress\" is loaded");
@@ -65,6 +67,7 @@ public class AppConfig {
 	address.setPincode(201509);
 	return address;
     }
+
     @Bean("myAccounts")
     public List<Account> getAccounts() {
 	System.out.println("\n\nBean named \"myAccounts\" is loaded");
@@ -79,7 +82,7 @@ public class AppConfig {
 	ac1.setBalance(55000d);
 	ac1.setDeposits(deposit);
 	ac1.setWithdrawls(withdrawl);
-	
+
 	//Account 2
 	Map<LocalDateTime, Double> deposit2 = new HashMap<LocalDateTime, Double>();
 	deposit.put(LocalDateTime.now(), 1200d);
@@ -91,15 +94,16 @@ public class AppConfig {
 	ac1.setBalance(56000d);
 	ac1.setDeposits(deposit2);
 	ac1.setWithdrawls(withdrawl2);
-	
+
 	List<Account> accounts = new ArrayList<Account>();
 	accounts.add(ac1);
 	accounts.add(ac2);
 	return accounts;
     }
+
     @Bean("myCust")
-    public Customer createCustomer(List<String> emails, Set<Long> phones, Properties props,
-	    Map<String, Integer> refs, Address address, List<Account> accounts) {
+    public Customer createCustomer(List<String> emails, Set<Long> phones, Properties props, Map<String, Integer> refs,
+	    Address address, List<Account> accounts) {
 	System.out.println("\n\nBean named \"myCust\" is loaded");
 	Customer customer1 = new Customer(1010101L, "Customer One", 7673767378L, "mno@pqr.com");
 	/*
@@ -107,7 +111,7 @@ public class AppConfig {
 	 * customer1.setCemail("mno@pqr.com"); customer1.setCphone(7673767378L);
 	 */
 	//constructor arguments
-	
+
 	customer1.setEmails(emails);
 	customer1.setPhones(phones);
 	customer1.setProps(props);
