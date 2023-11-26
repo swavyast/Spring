@@ -1,6 +1,6 @@
 package com.ml.spring;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 public class Account {
@@ -8,14 +8,14 @@ public class Account {
     private long acNo;
     private String acType;
     private double balance;
-    private Map<Date, Double> deposits;
-    private Map<Date, Double> withdrawls;
+    private Map<LocalDateTime, Double> deposits;
+    private Map<LocalDateTime, Double> withdrawls;
 
     public Account() {
     }
 
-    protected Account(long acNo, String acType, double balance, Map<Date, Double> deposits,
-	    Map<Date, Double> withdrawls) {
+    protected Account(long acNo, String acType, double balance, Map<LocalDateTime, Double> deposits,
+	    Map<LocalDateTime, Double> withdrawls) {
 	this.acNo = acNo;
 	this.acType = acType;
 	this.balance = balance;
@@ -47,19 +47,19 @@ public class Account {
 	this.balance = balance;
     }
 
-    public Map<Date, Double> getDeposits() {
+    public Map<LocalDateTime, Double> getDeposits() {
 	return deposits;
     }
 
-    public void setDeposits(Map<Date, Double> deposits) {
+    public void setDeposits(Map<LocalDateTime, Double> deposits) {
 	this.deposits = deposits;
     }
 
-    public Map<Date, Double> getWithdrawls() {
+    public Map<LocalDateTime, Double> getWithdrawls() {
 	return withdrawls;
     }
 
-    public void setWithdrawls(Map<Date, Double> withdrawls) {
+    public void setWithdrawls(Map<LocalDateTime, Double> withdrawls) {
 	this.withdrawls = withdrawls;
     }
 
