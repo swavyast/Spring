@@ -3,6 +3,7 @@ package com.ml.spring;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -10,6 +11,8 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.springframework.beans.factory.annotation.Autowire;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -34,7 +37,7 @@ public class AppConfig {
 	return phones;
     }
 
-    @Bean("myProps")
+    @Bean(name = "myProps", autowireCandidate = false)
     public Properties getProps() {
 	System.out.println("\n\nBean named \"myProps\" is loaded");
 	Properties props = new Properties();
@@ -72,9 +75,9 @@ public class AppConfig {
     public List<Account> getAccounts() {
 	System.out.println("\n\nBean named \"myAccounts\" is loaded");
 	//Account 1
-	Map<LocalDateTime, Double> deposit = new HashMap<LocalDateTime, Double>();
+	Map<LocalDateTime, Double> deposit = new Hashtable<LocalDateTime, Double>();
 	deposit.put(LocalDateTime.now(), 12000d);
-	Map<LocalDateTime, Double> withdrawl = new HashMap<LocalDateTime, Double>();
+	Map<LocalDateTime, Double> withdrawl = new Hashtable<LocalDateTime, Double>();
 	withdrawl.put(LocalDateTime.now(), 1200d);
 	Account ac1 = new Account();
 	ac1.setAcNo(110022001036L);
@@ -84,16 +87,16 @@ public class AppConfig {
 	ac1.setWithdrawls(withdrawl);
 
 	//Account 2
-	Map<LocalDateTime, Double> deposit2 = new HashMap<LocalDateTime, Double>();
+	Map<LocalDateTime, Double> deposit2 = new Hashtable<LocalDateTime, Double>();
 	deposit.put(LocalDateTime.now(), 1200d);
-	Map<LocalDateTime, Double> withdrawl2 = new HashMap<LocalDateTime, Double>();
+	Map<LocalDateTime, Double> withdrawl2 = new Hashtable<LocalDateTime, Double>();
 	withdrawl.put(LocalDateTime.now(), 12000d);
 	Account ac2 = new Account();
-	ac1.setAcNo(110022001098L);
-	ac1.setAcType("Current Account");
-	ac1.setBalance(56000d);
-	ac1.setDeposits(deposit2);
-	ac1.setWithdrawls(withdrawl2);
+	ac2.setAcNo(110022001098L);
+	ac2.setAcType("Current Account");
+	ac2.setBalance(56000d);
+	ac2.setDeposits(deposit2);
+	ac2.setWithdrawls(withdrawl2);
 
 	List<Account> accounts = new ArrayList<Account>();
 	accounts.add(ac1);
@@ -114,7 +117,7 @@ public class AppConfig {
 
 	customer1.setEmails(emails);
 	customer1.setPhones(phones);
-	customer1.setProps(props);
+	//customer1.setProps(props);
 	customer1.setRefs(refs);
 	customer1.setAddress(address);
 	customer1.setAccounts(accounts);
