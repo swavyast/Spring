@@ -1,5 +1,6 @@
 package com.ml.spring.caseFour;
 
+import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,7 +23,7 @@ public class AppConfig {
 	return two;
     }
     
-    @Bean("two")	////this bean was unnamed in caseThree
+    @Bean("two")	//this bean was unnamed in caseThree
     public ClassTwo getClassTwo_() {
 	ClassTwo two = new ClassTwo();
 	System.out.println("getClassTwo_() bean");

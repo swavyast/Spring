@@ -13,7 +13,7 @@ public class ClassOne {
 	System.out.println("Default constructor in ClassOne");
     }
 
-    protected ClassOne(long id, ClassTwo two) {
+    public ClassOne(long id, ClassTwo two) {
 	this.id = id;
 	this.two = two;
     }
@@ -27,10 +27,12 @@ public class ClassOne {
     }
 
     public ClassTwo getTwo() {
+	System.out.println("Getter method in class one for ClassTwo dependency");
 	return two;
     }
     @Qualifier("two")
     public void setTwo(ClassTwo two) {
+	System.out.println("Setter method in class one for ClassTwo dependency");
 	this.two = two;
     }
 

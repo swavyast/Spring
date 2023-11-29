@@ -12,7 +12,7 @@ public class ClassTwo {
 	System.out.println("Default constructor in ClassTwo");
     }
 
-    protected ClassTwo(long id, String name) {
+    public ClassTwo(long id, String name) {
 	this.id = id;
 	this.name = name;
     }
