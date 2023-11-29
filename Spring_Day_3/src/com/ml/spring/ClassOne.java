@@ -1,8 +1,12 @@
 package com.ml.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 public class ClassOne {
 
     private long id;
+    @Autowired
     private ClassTwo two;
 
     public ClassOne() {
@@ -25,7 +29,7 @@ public class ClassOne {
     public ClassTwo getTwo() {
 	return two;
     }
-
+    @Qualifier("two")
     public void setTwo(ClassTwo two) {
 	this.two = two;
     }
