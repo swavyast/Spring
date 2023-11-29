@@ -16,7 +16,7 @@ public class AppConfig {
 	return one;
     }
 
-    @Bean(name = "two", autowireCandidate = false)
+    @Bean(name = "two", autowireCandidate = true)
     public ClassTwo getClassTwo() {
 	ClassTwo two = new ClassTwo();
 	String msg = "Bean of ClassTwo";
