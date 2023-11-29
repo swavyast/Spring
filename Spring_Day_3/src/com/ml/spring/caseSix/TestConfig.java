@@ -13,7 +13,7 @@ public class TestConfig {
 
     public static void main(String[] args) {
 	ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-	System.out.println("\n\nSpring container is ready");
+	System.out.println("\n\nSpring container is ready");	//unreachable code
 
     }
 
