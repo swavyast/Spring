@@ -37,7 +37,7 @@ public class AppConfig {
 	return phones;
     }
 
-    @Bean(name = "myProps", autowireCandidate = false)
+    @Bean(name = "myprops", autowireCandidate = false)
     public Properties getProps() {
 	System.out.println("\n\nBean named \"myProps\" is loaded");
 	Properties props = new Properties();
@@ -88,9 +88,9 @@ public class AppConfig {
 
 	//Account 2
 	Map<LocalDateTime, Double> deposit2 = new Hashtable<LocalDateTime, Double>();
-	deposit.put(LocalDateTime.now(), 1200d);
+	deposit2.put(LocalDateTime.now(), 1200d);
 	Map<LocalDateTime, Double> withdrawl2 = new Hashtable<LocalDateTime, Double>();
-	withdrawl.put(LocalDateTime.now(), 12000d);
+	withdrawl2.put(LocalDateTime.now(), 12000d);
 	Account ac2 = new Account();
 	ac2.setAcNo(110022001098L);
 	ac2.setAcType("Current Account");
@@ -105,7 +105,7 @@ public class AppConfig {
     }
 
     @Bean("myCust")
-    public Customer createCustomer(List<String> emails, Set<Long> phones, Properties props, Map<String, Integer> refs,
+    public Customer createCustomer(List<String> emails, Set<Long> phones, Properties myprops, Map<String, Integer> refs,
 	    Address address, List<Account> accounts) {
 	System.out.println("\n\nBean named \"myCust\" is loaded");
 	Customer customer1 = new Customer(1010101L, "Customer One", 7673767378L, "mno@pqr.com");
@@ -117,10 +117,11 @@ public class AppConfig {
 
 	customer1.setEmails(emails);
 	customer1.setPhones(phones);
-	//customer1.setProps(props);
 	customer1.setRefs(refs);
 	customer1.setAddress(address);
 	customer1.setAccounts(accounts);
+	customer1.setProps(myprops);
+	System.out.println();
 	return customer1;
     }
 }
