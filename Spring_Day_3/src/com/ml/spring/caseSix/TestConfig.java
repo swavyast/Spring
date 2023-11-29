@@ -6,6 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.ml.spring.caseThree.AppConfig;
 
 /**
+ * Inside Runtime environment of JDK20
+ * 
  * Issue remains the same as caseThree and CaseFour and caseFive even after renaming the reference of 
  * ClassTwo inside getClassTwo_ bean
  * */

@@ -1,5 +1,6 @@
 package com.ml.spring.caseThree;
 
+import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,14 +15,14 @@ public class AppConfig {
 	String msg = "Bean of ClassOne";
 	return one;
     }
-    @Bean
+    @Bean("two")
     public ClassTwo getClassTwo() {
 	ClassTwo two = new ClassTwo();
 	String msg = "Bean of ClassTwo";
 	return two;
     }
     
-    @Bean	//this bean was not available in caseTwo
+    @Bean("two_S")	//this bean was not available in caseTwo
     public ClassTwo getClassTwo_() {
 	ClassTwo two = new ClassTwo();
 	String msg = "Bean of ClassTwo";

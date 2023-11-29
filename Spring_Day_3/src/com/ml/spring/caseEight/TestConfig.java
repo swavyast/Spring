@@ -7,6 +7,8 @@ import com.ml.spring.ClassOne;
 import com.ml.spring.ClassTwo;
 
 /**
+ * Inside Runtime environment of JDK20
+ * 
  * Now it is working fine(not completely though). Some changes can be seen in AppConfig class. One line of code(one.setTwo(two);)
  * has been added after : ClassOne one = new ClassOne();
  * which means, now container knows that I have to pick a bean named "two" as ClassOne's dependency.

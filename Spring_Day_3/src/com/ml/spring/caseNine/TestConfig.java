@@ -5,6 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.ml.spring.caseEight.AppConfig;
 /**
+ * Inside Runtime environment of JDK20
+ * 
  * Problem still remains the same as caseEight, even after manipulating autowireCandidate in AppConfig.
  * 
  * that means, problem is not with autowiring here.

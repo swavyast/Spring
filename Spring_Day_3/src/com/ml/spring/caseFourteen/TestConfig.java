@@ -5,6 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.ml.spring.caseEight.AppConfig;
 /**
+ * Inside Runtime environment of JDK20
+ * 
  * @Qualifier annotation also doesn't work alone.
  * 
  * Output : 

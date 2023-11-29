@@ -6,6 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.ml.spring.caseEight.AppConfig;
 
 /**
+ * Inside Runtime environment of JDK20
+ * 
  * Problem remains same even after removing autowireCandidates. 
  * 
  * Sometimes it's able to find "getClassTwo() bean" and works fine.
