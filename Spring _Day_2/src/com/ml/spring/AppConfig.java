@@ -40,13 +40,13 @@ public class AppConfig {
     @Bean(name = "myprops", autowireCandidate = false)
     public Properties getProps() {
 	System.out.println("\n\nBean named \"myProps\" is loaded");
-	Properties props = new Properties();
-	props.put("A", 1223);
-	props.put("B", 387836);
-	props.put("C", 383887);
-	props.put("D", 38376);
-	props.put("E", 4847);
-	return props;
+	Properties myprops = new Properties();
+	myprops.put("A", 1223);
+	myprops.put("B", 387836);
+	myprops.put("C", 383887);
+	myprops.put("D", 38376);
+	myprops.put("E", 4847);
+	return myprops;
     }
 
     @Bean("myRefs")
