@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-20">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/annotations-13.0.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/kotlin-reflect-1.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/kotlin-stdlib-1.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/kotlin-stdlib-common-1.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-aop-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-aop-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-aop-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-aspects-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-aspects-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-aspects-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-beans-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-beans-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-beans-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-indexer-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-indexer-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-indexer-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-support-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-support-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-context-support-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-core-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-core-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-core-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-expression-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-expression-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-expression-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-instrument-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-instrument-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-instrument-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jcl-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jcl-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jcl-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jdbc-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jdbc-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jdbc-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jms-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jms-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-jms-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-messaging-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-messaging-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-messaging-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-orm-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-orm-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-orm-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-oxm-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-oxm-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-oxm-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-test-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-test-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-test-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-tx-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-tx-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-tx-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-web-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-web-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-web-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-webflux-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-webflux-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-webflux-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-webmvc-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-webmvc-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-webmvc-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-websocket-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-websocket-5.2.5.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/Java Full Stack/JTC India/Frameworks/Spring/Spring Dependencies/spring-websocket-5.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
