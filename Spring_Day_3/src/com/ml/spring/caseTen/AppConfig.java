@@ -9,26 +9,22 @@ import com.ml.spring.ClassTwo;
 @Configuration
 public class AppConfig {
     @Bean
-    public ClassOne getClassOne(ClassTwo two) { //Dependency
+    public ClassOne getClassOne() {
 	ClassOne one = new ClassOne();
-	one.setTwo(two);
-	String msg = "Bean of ClassOne";
 	return one;
     }
 
-    @Bean(name = "two") //autowireCandidate attribute has been removed from here
-    public ClassTwo getClassTwo() {
+    @Bean("two")
+    public ClassTwo getClassTwo_One() {
 	ClassTwo two = new ClassTwo();
-	System.out.println("getClassTwo() bean");
-	String msg = "Bean of ClassTwo";
+	System.out.println("getClassTwo_One() bean");
 	return two;
     }
-
-    @Bean(name = "two")	//autowireCandidate attribute has been removed from here
-    public ClassTwo getClassTwo_() {
-	ClassTwo two_ = new ClassTwo(); //this ref. variable was named two in case five
-	System.out.println("getClassTwo_() bean");
-	String msg = "Bean of ClassTwo";
-	return two_;
+    
+    @Bean("two")
+    public ClassTwo getClassTwo_Two() {
+	ClassTwo two = new ClassTwo();
+	System.out.println("getClassTwo_Two() bean");
+	return two;
     }
 }

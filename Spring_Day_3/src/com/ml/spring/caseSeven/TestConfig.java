@@ -8,16 +8,46 @@ import com.ml.spring.caseThree.AppConfig;
 /**
  * Inside Runtime environment of JDK20
  * 
- * Issue remains the same even after manipulating autowiring.
- * 
- * Conclusion : no matter what, spring container is going to have only one bean per Type.
+ * @Autowired(required = true)
+ * Output:
+ * 1.
+ * Default constructor in ClassTwo
+ * getClassTwo_Two() bean
+ * Default constructor in ClassOne
+ * Error creating bean with name 'getClassOne': Unsatisfied dependency expressed through field 'two';
+ * nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException:
+ * No qualifying bean of type 'com.ml.spring.ClassTwo' available: expected single matching bean but found 2: 
+ * changed,getClassTwo_One
+ * 2.
+ * Default constructor in ClassTwo
+ * getClassTwo_Two() bean
+ * Default constructor in ClassTwo
+ * getClassTwo_One() bean
+ * Default constructor in ClassOne
+ * Error creating bean with name 'getClassOne': Unsatisfied dependency expressed through field 'two';
+ * nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException:
+ * No qualifying bean of type 'com.ml.spring.ClassTwo' available: expected single matching bean but found 2: 
+ * changed,getClassTwo_One
+ * 3.
+ * Default constructor in ClassTwo
+ * getClassTwo_One() bean
+ * Default constructor in ClassOne
+ * Error creating bean with name 'getClassOne': Unsatisfied dependency expressed through field 'two';
+ * nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException:
+ * No qualifying bean of type 'com.ml.spring.ClassTwo' available: expected single matching bean but found 2: 
+ * changed,getClassTwo_One
+ * 4.
+ * Default constructor in ClassOne
+ * Error creating bean with name 'getClassOne': Unsatisfied dependency expressed through field 'two';
+ * nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException:
+ * No qualifying bean of type 'com.ml.spring.ClassTwo' available: expected single matching bean but found 2: 
+ * changed,getClassTwo_One
  * */
 public class TestConfig {
 
     public static void main(String[] args) {
-	ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-	System.out.println("\n\nSpring container is ready");	//unreachable code
-	ctx.getBean("two");	//unreachable code
+	ApplicationContext ctx = new AnnotationConfigApplicationContext(com.ml.spring.caseSeven.AppConfig.class);
+	System.out.println("\n\nSpring container is ready");
     }
 
 }
