@@ -1,8 +1,5 @@
 package com.ml.spring;
 
-import org.springframework.stereotype.Component;
-
-@Component("classTwo")
 public class ClassTwo {
 
     private long id;

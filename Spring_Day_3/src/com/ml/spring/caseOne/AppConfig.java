@@ -8,17 +8,16 @@ import com.ml.spring.ClassTwo;
 
 @Configuration
 public class AppConfig {
-    
-    @Bean("one")
-    public ClassOne getClassOne(ClassTwo two) { //Dependency
-	ClassOne one = new ClassOne();
-	String msg = "Bean of ClassOne";
-	return one;
-    }
-    @Bean("two")
+    @Bean
     public ClassTwo getClassTwo() {
 	ClassTwo two = new ClassTwo();
 	String msg = "Bean of ClassTwo";
 	return two;
+    }
+    @Bean
+    public ClassOne getClassOne(ClassTwo two) { //Dependency
+	ClassOne one = new ClassOne();
+	String msg = "Bean of ClassOne";
+	return one;
     }
 }

@@ -8,16 +8,15 @@ import com.ml.spring.ClassTwo;
 
 @Configuration
 public class AppConfig {
-    @Bean
+    
+    @Bean("one")
+    public ClassOne getClassOne() {
+	ClassOne one = new ClassOne();
+	return one;
+    }
+    @Bean("two")
     public ClassTwo getClassTwo() {
 	ClassTwo two = new ClassTwo();
-	String msg = "Bean of ClassTwo";
 	return two;
-    }
-    @Bean	//this bean was named in caseOne
-    public ClassOne getClassOne(ClassTwo two) { //Dependency
-	ClassOne one = new ClassOne();
-	String msg = "Bean of ClassOne";
-	return one;
     }
 }
