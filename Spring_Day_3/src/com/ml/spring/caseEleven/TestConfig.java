@@ -5,16 +5,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.ml.spring.caseEight.AppConfig;
 /**
+/**
  * Inside Runtime environment of JDK20
  * 
- * Problem remains the same, even after renaming second bean.
- * 
- * Let's check if autowiring works in this case.
+ * @Autowired(required = false)
+ * Output:
+ * 1.
+ * Default constructor in ClassOne
+ * Spring Container is ready
  * */
 public class TestConfig {
 
     public static void main(String[] args) {
-	ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+	ApplicationContext ctx = new AnnotationConfigApplicationContext(com.ml.spring.caseEleven.AppConfig.class);
 	System.out.println("Spring Container is ready");
     }
 
