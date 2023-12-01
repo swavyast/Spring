@@ -7,7 +7,7 @@ public class ClassOne {
 
     private long id;
     @Autowired(required = true)
-    @Qualifier
+    @Qualifier("someName")
     private ClassTwo two;
 
     public ClassOne() {
