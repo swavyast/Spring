@@ -1,4 +1,4 @@
-package com.ml.spring.caseNine;
+package com.ml.spring.caseTen;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @Autowired(required = true)
  * @Qualifier("someName")
  * Bean("someName") of ClassTwo
- * Bean("otherName") of ClassTwo
+ * Bean("two") of ClassTwo. same as field name.
  * Output :
  * 1.
  * Default constructor in ClassTwo
@@ -51,7 +51,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class TestConfig {
 
     public static void main(String[] args) {
-	ApplicationContext ctx = new AnnotationConfigApplicationContext(com.ml.spring.caseNine.AppConfig.class);
+	ApplicationContext ctx = new AnnotationConfigApplicationContext(com.ml.spring.caseTen.AppConfig.class);
 	System.out.println("Spring Container is ready");
 	((ConfigurableApplicationContext)ctx).close();
     }
