@@ -9,17 +9,18 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * CaseOne :
  * @Autowired(required = true)
  * @Qualifier("someName")
- * One Bean of ClassTwo without any name
+ * Bean("someName") of ClassTwo
  * Output :
  * 1.
  * Default constructor in ClassTwo
  * getClassTwo_One() bean
  * Default constructor in ClassOne
  * Spring Container is ready
- * 2,
+ * 2.
  * Default constructor in ClassOne
  * Default constructor in ClassTwo
  * getClassTwo_One() bean
+ * Spring Container is ready
  * */
 public class TestConfig {
 
