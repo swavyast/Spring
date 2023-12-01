@@ -1,6 +1,7 @@
 package com.ml.spring.caseThree;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -19,7 +20,7 @@ public class TestConfig {
     public static void main(String[] args) {
 	ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 	System.out.println("\n\nSpring container is ready");
-
+	((ConfigurableApplicationContext)ctx).close();
     }
 
 }

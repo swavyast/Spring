@@ -1,9 +1,8 @@
 package com.ml.spring.caseNine;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.ml.spring.caseEight.AppConfig;
 
 /**
  * Inside Runtime environment of JDK20
@@ -51,6 +50,7 @@ public class TestConfig {
     public static void main(String[] args) {
 	ApplicationContext ctx = new AnnotationConfigApplicationContext(com.ml.spring.caseNine.AppConfig.class);
 	System.out.println("Spring Container is ready");
+	((ConfigurableApplicationContext)ctx).close();
     }
 
 }

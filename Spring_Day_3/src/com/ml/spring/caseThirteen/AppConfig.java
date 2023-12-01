@@ -13,7 +13,6 @@ public class AppConfig {
 	ClassOne one = new ClassOne();
 	return one;
     }
-
     @Bean(name = "differentName")
     public ClassTwo getClassTwo() {
 	ClassTwo two = new ClassTwo();

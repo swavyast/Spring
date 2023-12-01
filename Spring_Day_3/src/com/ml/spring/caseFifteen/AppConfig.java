@@ -13,14 +13,12 @@ public class AppConfig {
 	ClassOne one = new ClassOne();
 	return one;
     }
-
     @Bean
     public ClassTwo getClassTwo_One() {
 	ClassTwo two = new ClassTwo();
 	System.out.println("getClassTwo_One() bean");
 	return two;
     }
-
     @Bean
     public ClassTwo getClassTwo_Two() {
 	ClassTwo two = new ClassTwo();
