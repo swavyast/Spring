@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * Inside Runtime environment of JDK20
- * CaseTwo :
+ * CaseThree :
  * @Autowired(required = true)
  * @Qualifier
  * Bean("someName") of ClassTwo

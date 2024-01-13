@@ -6,10 +6,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * Inside Runtime environment of JDK20
- * CaseOne :
+ * CaseOne : No beans.
  * @Autowired(required = true)
  * @Qualifier
- * No Bean of ClassTwo
+ * 
  * Output :
  * 1.
  * Default constructor in ClassOne
