@@ -1,1 +1,16 @@
 
+[submodule "Spring_Day_1"]
+	path = Spring_Day_1
+	url = https://github.com/swavyast/Spring_Day_1
+[submodule "Spring_Day_2"]
+	path = Spring_Day_2
+	url = https://github.com/swavyast/Spring_Day_2
+[submodule "Spring_Day_3"]
+	path = Spring_Day_3
+	url = https://github.com/swavyast/Spring_Day_3
+[submodule "Spring_Day_4"]
+	path = Spring_Day_4
+	url = https://github.com/swavyast/Spring_Day_4
+[submodule "SpringWithJDBC"]
+	path = SpringWithJDBC
+	url = https://github.com/swavyast/SpringWithJDBC
